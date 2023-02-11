@@ -1,3 +1,8 @@
+#CUSTOM
+./*.ipynb
+notebooks/.ipynb_checkpoints
+notebooks/exploring.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
