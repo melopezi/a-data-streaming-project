@@ -1,0 +1,3 @@
+In order to make this project work on local...
+1. Create ".env" file in current directory.
+2. Add the enviroment variables needed for project to work.
