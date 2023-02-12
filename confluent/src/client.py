@@ -1,6 +1,7 @@
 import os
 from collections.abc import Mapping
 
+from confluent_kafka.schema_registry import SchemaRegistryClient
 
 class Confluent():
     def __init__(self, schema_registry: bool = False):
@@ -63,4 +64,4 @@ class Confluent():
 
         self.conf_params['basic.auth.credentials.source'] = os.getenv(
             'CONFLU_AUTH_CRED_SOURCE')
-        self.conf_params['basic.auth.user.info'] = f"{os.getenv('CONFLU_SR_API_KEY')}:{os.getenv('CONFLU_SR_API_SECRET')}"
+        self.conf_params['basic.auth.user.info'] = f"{os.getenv('CONFLU_SCHEMA_REGISTRY_KEY')}:{os.getenv('CONFLU_SCHEMA_REGISTRY_SECRET')}"
